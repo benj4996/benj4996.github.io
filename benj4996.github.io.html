@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>Rysensteen GCP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Rysensteen%20billede%20af%20skolen.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT OUR SCHOOL</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">TOURIST GUIDE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header med billede -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">+45 33 24 43 11</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Rysensteen<br>Gymnasium</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Tietgensgade 74, 1704 København</span>
+  </div>
+</header>
+
+<!-- Eventuel baggrundsfarve -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RYSENSTEEN GYMNASIUM</span></h5>
+    <p>Find the school's main office at Tietgensgade 74, 1704 København.</p>
+    <img src="map_1(1).png" class="w3-image" style="width:100%">
+    <a href="https://rysensteen.dk/en-welcome">Visit the school's official website here!</a>
+    <p><b>Lunch</b></p>
+    <p>We have 40 min to eat lunch and there are many options on Istedgade, near the school including..</p>
+    <p><ul>
+      <li>Boys Kebab</li>
+      <li>Tony's Pizza</li>
+      <li>Super Brugsen</li>
+    </ul></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>School Motto: NORA</p>
+      <p><ul>
+        <li>Nysgerrighed - Curiosity</li>
+        <li>Ordentlighed - Orderliness</li>
+        <li>Rummelighed - Capaciousness</li>
+        <li>Ansvarlighed - Responsibility</li>
+      </ul></p>
+    </div>
+  </div>
+</div>
+
+<!-- US Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">US</span></h5>
+    <img src="2.f Klassebillede.jpg" class="w3-image" style="width:100%">
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Adrian</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Benjamin</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Age</h5>
+      <p class="w3-text-grey">18 years old</p><br>
+    
+      <h5>Class</h5>
+      <p class="w3-text-grey">2.F</p><br>
+
+      <h5>Phone number</h5>
+      <p class="w3-text-grey">+45 60 68 60 72</p><br>
+    
+      <h5>Interests</h5>
+      <p class="w3-text-grey">Friends and family</p><br>
+    
+      <h5>Passions</h5>
+      <p class="w3-text-grey">Chasin' bread an' pimpin'</p><br>
+    
+      <h5>Hobbies</h5>
+      <p class="w3-text-grey">Books, rock music and chess</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Age</h5>
+      <p class="w3-text-grey">18 years old</p><br>
+
+      <h5>Class</h5>
+      <p class="w3-text-grey">2.F</p><br>
+
+      <h5>Phone number</h5>
+      <p class="w3-text-grey">+45 22 15 83 10</p><br>
+    
+      <h5>Interests</h5>
+      <p class="w3-text-grey">Conspiracy theories</p><br>
+    
+      <h5>Passions</h5>
+      <p class="w3-text-grey">Gaming, music & reading</p><br>
+    
+      <h5>Hobbies</h5>
+      <p class="w3-text-grey">Furthering my career towards becoming an economist</p><br>
+      
+  
+    </div>  
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TOURIST GUIDE</span></h5>
+    <iframe style="width:100%;max-width:1000px" height="400" src="https://www.youtube.com/embed/caPwuaBM8Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    <p><span class="w3-tag">FYI!</span> Here is a short video giving a few tips for when you're visiting Copenhagen.</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by Adrian and Benjamin</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
